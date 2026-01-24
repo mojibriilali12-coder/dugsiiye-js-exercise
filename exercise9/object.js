@@ -10,6 +10,5 @@ let car={
 }
 
 console.log(car.start())
-console.log(car.make);
-console.log(car.modal);
-console.log(car.year);
+
+
