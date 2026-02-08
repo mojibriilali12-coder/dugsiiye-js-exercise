@@ -1,0 +1,19 @@
+
+
+{
+    "id":2,
+    "name":"ali",
+    "status":"married",
+    
+    "oreder":[{"product":"mobile", "quantity":2, "date of parchased":2025},
+              
+              {
+                "product":"laptop", "quantity":3, "date of parchased":2026
+            },
+
+              {
+                "product":"frige", "quantity":5, "date of parchased":2024
+            }
+
+]
+}
