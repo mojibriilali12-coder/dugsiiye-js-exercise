@@ -106,30 +106,30 @@ function handleEdit(postId, li){
     const content = li.querySelector(".blog-post");
     const image = li.querySelector(".post-image");
 
-    // Get current values
+
     const currentTitle = titleEl.textContent;
     const currentContent = content.textContent;
     const currentImage = image ? image.src : "";
 
-    // Ask user for new values
+    
     const newTitle = prompt("Edit title:", currentTitle);
     const newContent = prompt("Edit content:", currentContent);
     const newImage = prompt("Edit image URL:", currentImage);
 
     if(newTitle && newContent){
-        // Update LocalStorage
+       
         updatePost(postId, newTitle, newContent, newImage);
 
-        // Update DOM
+        
         titleEl.textContent = newTitle;
         content.textContent = newContent;
 
-        // Handle image update
+       
         if(newImage){
             if(image){
-                image.src = newImage; // update existing image
+                image.src = newImage; 
             } else {
-                // create new image if not exists
+                
                 const img = document.createElement("img");
                 img.src = newImage;
                 img.classList.add("post-image");
@@ -137,7 +137,7 @@ function handleEdit(postId, li){
                 li.insertBefore(img, content);
             }
         } else {
-            // remove image if user deletes URL
+           
             if(image){
                 image.remove();
             }
@@ -183,7 +183,7 @@ function savePostToLocalStorage(post){
 
     localStorage.setItem("posts", JSON.stringify(oldPosts));
 
-    // localStorage.setItem("tasks", JSON.stringify(oldTasks))
+   
 }
 
 
