@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Input + Button */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4facfe;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3a8de0;
+}
+
+/* Weather box */
+.weather-box {
+  margin-top: 20px;
+}
+
+#city {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+#temp {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Details */
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+/* 🔥 Tablet and bigger screens */
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #temp {
+    font-size: 2.5rem;
+  }
+}

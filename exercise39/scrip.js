@@ -59,7 +59,7 @@ function loadLanguages() {
   });
 
   fromSelect.value = "auto";
-  toSelect.value = "en";
+  toSelect.value = "en"
 }
 
 
